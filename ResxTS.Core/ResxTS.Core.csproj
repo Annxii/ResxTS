@@ -47,11 +47,12 @@
     <Compile Include="Reader\ResxEntry.cs" />
     <Compile Include="Reader\ResxReader.cs" />
     <Compile Include="ResxResult.cs" />
+    <Compile Include="Scanner\IResxValueScanner.cs" />
     <Compile Include="StringSegment.cs" />
     <Compile Include="ResxValue.cs" />
     <Compile Include="ResxValueSegment.cs" />
     <Compile Include="Scanner\StringParseException.cs" />
-    <Compile Include="Scanner\StringValueScanner.cs" />
+    <Compile Include="Scanner\ResxValueScanner.cs" />
     <Compile Include="Utils\IIdentWriter.cs" />
     <Compile Include="Utils\IndentWriter.cs" />
     <Compile Include="Utils\TypeScriptBuilder.cs" />

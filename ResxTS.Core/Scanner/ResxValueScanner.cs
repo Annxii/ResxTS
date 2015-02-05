@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ResxTS.Core.Scanner
 {
-    public class StringValueScanner
+    public class ResxValueScanner : IResxValueScanner<ResxValue>
     {
         public ResxValue Scan(string txt)
         {

@@ -30,7 +30,7 @@ namespace ResxTS.Core
 
         public static ResxResult Create<T>(IResxReader<T> reader) where T : ResxEntry
         {
-            var scanner = new StringValueScanner();
+            var scanner = new ResxValueScanner();
             var result = new ResxResult(reader.Name, reader.Culture, isDefault: string.IsNullOrWhiteSpace(reader.Culture));
 
             foreach (var item in reader.GetEntries())

@@ -27,7 +27,7 @@ namespace ResxTS.Core
 
         private ResxValueSegment[] segments;
 
-        private ResxValue(IEnumerable<ResxValueSegment> segments)
+        protected ResxValue(IEnumerable<ResxValueSegment> segments)
         {
             this.segments = segments.OrderBy(x => x.Start).ToArray();
         }
