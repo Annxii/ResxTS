@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 
-namespace ResxTS.VSExtensions.CustomTool
+namespace ResxTS.VSExtensions.ResxTsGenerator
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -30,7 +30,7 @@ namespace ResxTS.VSExtensions.CustomTool
     // in the Help/About dialog of Visual Studio.
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
     [Guid(GuidList.guidPkgString)]
-    public sealed class CustomToolPackage : Package
+    public sealed class ResxTsGeneratorPackage : Package
     {
         /// <summary>
         /// Default constructor of the package.
@@ -39,9 +39,9 @@ namespace ResxTS.VSExtensions.CustomTool
         /// not sited yet inside Visual Studio environment. The place to do all the other 
         /// initialization is the Initialize method.
         /// </summary>
-        public CustomToolPackage()
+        public ResxTsGeneratorPackage()
         {
-            Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
+
         }
 
 
@@ -56,10 +56,7 @@ namespace ResxTS.VSExtensions.CustomTool
         /// </summary>
         protected override void Initialize()
         {
-            Debug.WriteLine (string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));
             base.Initialize();
-
-            var solution = (SVsSolution)this.GetService(typeof(SVsSolution));
         }
         #endregion
 

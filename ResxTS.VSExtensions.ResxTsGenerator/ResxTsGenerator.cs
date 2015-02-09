@@ -15,9 +15,9 @@ using System.IO;
 using ResxTS.Core;
 using ResxTS.Core.Generator;
 
-namespace ResxTS.VSExtensions.CustomTool
+namespace ResxTS.VSExtensions.ResxTsGenerator
 {
-    [Guid(GuidList.guidCustomToolString)]
+    [Guid(GuidList.guidResxTsGeneratorString)]
     [ProvideObject(typeof(ResxTsGenerator))]
     [CodeGeneratorRegistration(typeof(ResxTsGenerator), "ResxTsGenerator", VSConstants.UICONTEXT.CSharpProject_string, GeneratesDesignTimeSource = true)]
     public class ResxTsGenerator : BaseCodeGeneratorWithSite

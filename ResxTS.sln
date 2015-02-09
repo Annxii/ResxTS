@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResxTS.Core", "ResxTS.Core\ResxTS.Core.csproj", "{5DB6ED66-1BA3-4379-AEB3-0675F2700395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResxTS.VSExtensions.CustomTool", "ResxTS.VSExtensions.CustomTool\ResxTS.VSExtensions.CustomTool.csproj", "{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResxTS.VSExtensions.ResxTsGenerator", "ResxTS.VSExtensions.ResxTsGenerator\ResxTS.VSExtensions.ResxTsGenerator.csproj", "{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
