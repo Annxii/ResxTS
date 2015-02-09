@@ -14,8 +14,8 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            var rdr = ResxReader.Create("Testresources.resx");
-            var result = ResxResult.Create(rdr);
+            var provider = new ResxResultProvider();
+            var result = provider.GetResult("Testresources.resx");
 
             var generator = new TypeScriptGenerator();
 

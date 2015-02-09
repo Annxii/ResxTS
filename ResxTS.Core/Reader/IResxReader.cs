@@ -8,8 +8,8 @@ namespace ResxTS.Core.Reader
 {
     public interface IResxReader<T> where T : ResxEntry
     {
-        public string Name { get; }
-        public string Culture { get; }
-        public IEnumerable<T> GetEntries();
+        string Name { get; }
+        string Culture { get; }
+        IEnumerable<T> GetEntries();
     }
 }

@@ -29,6 +29,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -41,12 +47,14 @@
   <ItemGroup>
     <Compile Include="Generator\IResourceCodeGenerator.cs" />
     <Compile Include="Generator\TypeScriptGenerator.cs" />
+    <Compile Include="IResxResultProvider.cs" />
     <Compile Include="ParameterSegment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reader\IResxReader.cs" />
     <Compile Include="Reader\ResxEntry.cs" />
     <Compile Include="Reader\ResxReader.cs" />
     <Compile Include="ResxResult.cs" />
+    <Compile Include="ResxResultProvider.cs" />
     <Compile Include="Scanner\IResxValueScanner.cs" />
     <Compile Include="StringSegment.cs" />
     <Compile Include="ResxValue.cs" />
@@ -55,7 +63,11 @@
     <Compile Include="Scanner\ResxValueScanner.cs" />
     <Compile Include="Utils\IIdentWriter.cs" />
     <Compile Include="Utils\IndentWriter.cs" />
+    <Compile Include="Utils\ResxNaming.cs" />
     <Compile Include="Utils\TypeScriptBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

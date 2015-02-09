@@ -13,7 +13,7 @@ namespace ResxTS.Core.Utils
 
         public IndentWriter(Stream stream)
         {
-            writer = new StreamWriter(stream, Encoding.UTF8);
+            writer = new StreamWriter(stream, Encoding.UTF8) { AutoFlush = true };
         }
 
         public void WL(int i, string txt, params string[] parameters)
@@ -25,7 +25,10 @@ namespace ResxTS.Core.Utils
         public void W(int i, string txt, params string[] parameters)
         {
             writer.Write(new string(' ', i * 4));
-            writer.Write(txt, parameters);
+            if (parameters != null && parameters.Length > 0)
+                writer.Write(txt, parameters);
+            else
+                writer.Write(txt);
         }
 
         public void LineBreak()

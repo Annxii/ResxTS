@@ -21,9 +21,10 @@ namespace ResxTS.Core.Generator
 
         public void Generate(Stream stream, string @namespace, ResxResult mainResx, ResxResult localizedResx = null)
         {
-            IndentWriter w = new IndentWriter(stream);
-
-            WriteModule(w, 0, @namespace, mainResx, localizedResx);
+            using (IndentWriter w = new IndentWriter(stream))
+            {
+                WriteModule(w, 0, @namespace, mainResx, localizedResx);
+            }
         }
 
         private void WriteModule(IIdentWriter w, int i, string @namespace, ResxResult mainResx, ResxResult localizedResx)

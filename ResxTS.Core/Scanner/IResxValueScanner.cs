@@ -8,6 +8,6 @@ namespace ResxTS.Core.Scanner
 {
     public interface IResxValueScanner<T> where T : ResxValue
     {
-        public T Scan(string text);
+        T Scan(string text);
     }
 }

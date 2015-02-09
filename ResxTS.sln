@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResxTS.Core", "ResxTS.Core\ResxTS.Core.csproj", "{5DB6ED66-1BA3-4379-AEB3-0675F2700395}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResxTS.VSExtensions.CustomTool", "ResxTS.VSExtensions.CustomTool\ResxTS.VSExtensions.CustomTool.csproj", "{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5DB6ED66-1BA3-4379-AEB3-0675F2700395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DB6ED66-1BA3-4379-AEB3-0675F2700395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DB6ED66-1BA3-4379-AEB3-0675F2700395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C05AF5F-9BFA-4927-A97B-BE1AB6FCF021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
